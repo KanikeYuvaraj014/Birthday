@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Baby's 1st Birthday</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Montserrat:wght@400;600&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div id="balloon-container"></div>
+    <div class="container">
+        <!-- Part 1: Top Left - Photo & Greeting -->
+        <div class="quadrant quadrant-1">
+            <div class="content">
+                <div class="photo-frame">
+                    <img src="./CELE.jpeg" alt="Baby Photo" class="baby-photo">
+                </div>
+                <h1 class="greeting">Welcome to Our Little Sunshine's 1st Birthday!</h1>
+                <p class="sub-greeting">Join us in celebrating this special milestone.</p>
+            </div>
+        </div>
+
+        <!-- Part 2: Top Right - Countdown Timer -->
+        <div class="quadrant quadrant-2">
+            <div class="content">
+                <h2>Countdown to the Big Day</h2>
+                <div class="timer" id="timer">
+                    <div class="time-unit">
+                        <span id="days">00</span>
+                        <label>Days</label>
+                    </div>
+                    <div class="time-unit">
+                        <span id="hours">00</span>
+                        <label>Hours</label>
+                    </div>
+                    <div class="time-unit">
+                        <span id="minutes">00</span>
+                        <label>Minutes</label>
+                    </div>
+                    <div class="time-unit">
+                        <span id="seconds">00</span>
+                        <label>Seconds</label>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Part 3: Bottom Left - Venue Details -->
+        <div class="quadrant quadrant-3">
+            <div class="content">
+                <h2>The Celebration</h2>
+                <div class="venue-details">
+                    <div class="detail-item">
+                        <i class="icon">📅</i>
+                        <p>February 17, 2026</p>
+                    </div>
+                    <div class="detail-item">
+                        <i class="icon">⏰</i>
+                        <p>5:00 PM - 8:00 PM</p>
+                    </div>
+                    <div class="detail-item">
+                        <i class="icon">📍</i>
+                        <p>
+                            <a href="https://maps.app.goo.gl/4oRzbp4ruLg5FuyE7" target="_blank" class="location-link">
+                                RPR Conventional Hall<br>Kaveri nagar hongasandra, Bangalore
+                            </a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Part 4: Bottom Right - RSVP -->
+        <div class="quadrant quadrant-4">
+            <div class="content" id="rsvp-content">
+                <h2>Are you coming?</h2>
+                <div class="rsvp-buttons">
+                    <button id="yes-btn" class="btn btn-yes">Yes, count me in!</button>
+                    <button id="no-btn" class="btn btn-no">Sorry, can't make it</button>
+                </div>
+            </div>
+            <div class="content hidden" id="thank-you-message">
+                <h2>Yay! See you there! 🎉</h2>
+                <p>We can't wait to celebrate with you.</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
